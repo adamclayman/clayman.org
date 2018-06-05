@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClaymanOrg</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Clayman Clan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./adam">Adam</a>
+              <a class="dropdown-item" href="./ariel">Ariel</a>
+              <a class="dropdown-item" href="./aviva">Aviva</a>
+              <a class="dropdown-item" href="./benyamin">Benyamin</a>
+              <a class="dropdown-item" href="./chaya">Chaya</a>
+              <a class="dropdown-item" href="./deborah">Deborah</a>
+              <a class="dropdown-item" href="./joel">Joel</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Request Family Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Kids Code</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+    <footer>
+      <div id="construction" class="container">Under Low-Priority Construction</div>
+      <div id="copyright" class="container">&copy; 2018 Clayman Family</div>
+    </footer>
+  </body>
+</html>
