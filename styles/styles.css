@@ -1,0 +1,17 @@
+body {
+	background-color: #EEE;
+}
+
+div#welcome h1 {
+	margin-top: 36px;
+}
+
+#dj-table {
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+footer div {
+	margin: auto;
+	text-align: center;
+}
