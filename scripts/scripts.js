@@ -4,6 +4,6 @@ $(document).ready(function(){
 
 lightbox.option({
   'resizeDuration': 200,
-  'wrapAround': true,
+  'wrapAround': false,
   albumLabel: "Let's stay in touch!"
 })
